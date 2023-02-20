@@ -1,0 +1,169 @@
+body {
+    background: black;
+}
+section {
+    height: 100vh;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contain{
+    position: relative;
+}
+.span{
+display: flex;
+    color: #4d2bad;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin-top: 6.5rem;
+
+    justify-content: space-between;
+       
+    width: 50px;
+    animation-name: anime3;
+    animation-duration: 1.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+   
+}
+.cercle1{
+    height: 3rem;
+    width: 3rem;
+    background-color: #5f3bc2;
+    border-radius: 50%;
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+   
+}
+
+
+.cercle2{
+    height: 100px;
+    width: 100px;
+    animation-name: anime2;
+    background-color: rgb(105, 72, 181);
+    border-radius: 50%;
+    margin-right: 8rem;
+    margin-bottom: 8rem;
+
+  
+    
+    animation-duration: 1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+.cercle3{
+   
+    animation-name: anime4;
+    background-color: rgba(121, 117, 117, 0.444);
+    animation-duration: 2s;
+    animation-timing-function:steps(5, end);
+    animation-iteration-count: infinite;
+    border-radius: 50%; }
+.cercle{
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 1rem;
+    height: 1rem;
+    
+}
+
+
+
+@keyframes anime{
+    0%{
+        opacity:1;
+        
+    }
+    30% {
+       
+        opacity: 1;
+    }
+    100% {
+        transform: scale(13);
+        opacity: 0;
+    }
+}
+
+@keyframes anime2{
+    0%{
+        transform: scale(1);
+        opacity:0;
+
+    }
+    50%{
+       transform: scale(1);
+       opacity:1;
+       
+    }
+
+    100%{
+        transform: scale(1);
+        opacity:0;
+        
+     }
+    
+}
+
+
+@keyframes anime4{
+    0%{
+        transform: scale(1);
+    }
+
+
+     20%{
+        transform: scale(1.2);  
+    
+     }  
+
+     40%{
+        transform: scale(1.4);
+    }
+
+
+     60%{
+        transform: scale(1.8);  
+    
+}
+80%{
+    transform: scale(2.2);
+}
+
+
+ 100%{
+    transform: scale(3);}}
+
+@keyframes anime3{
+    0%{
+        justify-content: space-between;
+       
+        width: 200px;
+        opacity:0;
+       
+
+    }
+    40%{
+        justify-content: space-between;
+       
+        width: 150px;
+       
+    }
+    100%{
+        justify-content: space-between;
+       
+        width: 70px;
+        opacity:1;
+    }
+    
+}
